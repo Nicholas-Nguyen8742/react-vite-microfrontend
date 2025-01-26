@@ -1,0 +1,32 @@
+{
+  "name": "react-vite-microfrontend",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "license": "MIT",
+  "author": "Nicholas Nguyen <NicholasNguyen8742@gmail.com> (https://github.com/Nicholas-Nguyen8742)",
+  "scripts": {
+    "apps:serve": "pnpm --filter ./packages/apps serve",
+    "apps:build": "pnpm --filter ./packages/apps build",
+    "apps:dev": "pnpm --filter ./packages/apps dev:hosts",
+    "apps:stop": "pnpm --filter ./packages/apps stop",
+    "generate-module": "node scripts/generate-module/index.js"
+  },
+  "engines": {
+    "node": "22.13.1",
+    "pnpm": "9.15.4"
+  },
+  "packageManager": "pnpm@9.15.4",
+  "workspaces": [
+    "packages/**"
+  ],
+  "keywords": [
+    "pnpm",
+    "vite",
+    "typescript",
+    "nvm"
+  ],
+  "devDependencies": {
+    "eslint": "^9.19.0"
+  }
+}

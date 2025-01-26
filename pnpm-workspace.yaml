@@ -1,0 +1,5 @@
+packages:
+  - packages/apps/**/*
+  - packages/apps
+  - packages/backend
+  - packages/database
